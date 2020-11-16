@@ -1,0 +1,6 @@
+{
+	"redirects": [
+		{ "source": "/gh", "destination": "https://github.com/molnarmark" },
+		{ "source": "/subl", "destination": "https://github.com/molnarmark/sublime-settings" }
+	]
+}
