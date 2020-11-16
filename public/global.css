@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
+
+body {
+	background: black;
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	font-family: 'Dekko', sans-serif;
+	display: flex;
+	justify-content: center;
+	font-size: 28px;
+}
