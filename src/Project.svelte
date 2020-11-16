@@ -15,11 +15,11 @@
 	.project {
 		display: flex;
 		flex: 1 0 30%;
-		justify-content: center;
 		align-items: center;
 		flex-direction: column;
 		margin: 15px;
 		border: solid 1px #009787;
+		position: relative;
 	}
 
 	.project-title {
@@ -36,9 +36,12 @@
 		padding: 10px;
 		font-size: 20px;
 		text-align: center;
+		margin-bottom: 40px;
 	}
 
 	.project-stars {
+		position: absolute;
+		bottom: 0;
 		font-size: 22px;
 	}
 </style>
