@@ -27,7 +27,7 @@
 		<h1>👋 Hello, I'm Mark.</h1>
 
 		<span>I'm 23. I write code. Mainly <b class="javascript">JavaScript</b>.</span>
-		<span>I'm many things, one of them is being a <b class="fullstack">Full-Stack Developer</b>.</span>
+		<span>I'm many things, one of them is being a <b class="fullstack">Full Stack Developer</b>.</span>
 		<span>I'm also a <b class="subl">Sublime Text</b> nerd and I tend to be interested in too many <b class="technologies">technologies</b>.</span>
 		<br />
 		<span>While you are here, you can check out some of my projects from
