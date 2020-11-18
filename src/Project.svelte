@@ -20,6 +20,9 @@
 		margin: 15px;
 		border: solid 1px #009787;
 		position: relative;
+		-webkit-box-shadow: 0px 5px 0px 0px #009787;
+		-moz-box-shadow: 0px 5px 0px 0px #009787;
+		box-shadow: 0px 5px 0px 0px #009787;
 	}
 
 	.project-title {

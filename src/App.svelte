@@ -23,8 +23,9 @@
 </script>
 
 <main>
+	<div class="body-waves"></div>
 	<div id="intro">
-		<h1>👋 Hello, I'm Mark.</h1>
+		<h1><span class="wave">👋</span> Hello, I'm Mark.</h1>
 
 		<span>I'm 23. I write code. Mainly <b class="javascript">JavaScript</b>.</span>
 		<span>I'm many things, one of them is being a <b class="fullstack">Full Stack Developer</b>.</span>
@@ -55,6 +56,8 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		z-index: 2;
+		position: relative;
 	}
 
 	/*Highlights*/
@@ -84,12 +87,12 @@
 
 	#info {
 		width: 100%;
-		display: block;
+		position: absolute;
+		bottom: 10px;
 		font-size: 20px;
 		text-align: center;
 		font-weight: bold;
 		padding-top: 40px;
-		background: black;
 	}
 
 	#projects {
