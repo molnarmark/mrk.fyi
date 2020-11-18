@@ -87,12 +87,12 @@
 
 	#info {
 		width: 100%;
-		position: absolute;
-		bottom: 10px;
+		display: block;
 		font-size: 20px;
 		text-align: center;
 		font-weight: bold;
 		padding-top: 40px;
+		background: black;
 	}
 
 	#projects {
