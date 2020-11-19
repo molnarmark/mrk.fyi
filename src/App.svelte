@@ -101,5 +101,6 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		width: 80%;
+		background: black;
 	}
 </style>
