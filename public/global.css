@@ -13,6 +13,13 @@ body {
 	color: white;
 	position: relative;
 	z-index: 0;
+	overflow-y: hidden;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .body-waves {
