@@ -102,5 +102,6 @@
 		flex-wrap: wrap;
 		width: 80%;
 		background: black;
+		z-index: 2;
 	}
 </style>
