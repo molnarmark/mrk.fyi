@@ -93,6 +93,7 @@
 		font-weight: bold;
 		padding-top: 40px;
 		background: black;
+		z-index: 2;
 	}
 
 	#projects {
