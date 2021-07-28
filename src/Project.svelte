@@ -18,11 +18,22 @@
 		align-items: center;
 		flex-direction: column;
 		margin: 15px;
-		border: solid 1px #009787;
+		background: #2072e008;
+		border: solid 2px #2072e0;
+		border-radius: 5px;
 		position: relative;
-		-webkit-box-shadow: 0px 5px 0px 0px #009787;
-		-moz-box-shadow: 0px 5px 0px 0px #009787;
-		box-shadow: 0px 5px 0px 0px #009787;
+		-webkit-box-shadow: 0px 2px 0px 0px #2072e0;
+		-moz-box-shadow: 0px 2px 0px 0px #2072e0;
+		box-shadow: 0px 2px 0px 0px #2072e0;
+		transition: all 100ms ease-in-out;
+	}
+
+	.project:hover {
+		border: solid 2px #164482;
+		-webkit-box-shadow: 0px 2px 0px 0px #164482;
+		-moz-box-shadow: 0px 2px 0px 0px #164482;
+		box-shadow: 0px 2px 0px 0px #164482;
+		cursor: pointer;
 	}
 
 	.project-title {
