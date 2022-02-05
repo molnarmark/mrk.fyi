@@ -27,7 +27,7 @@
 	<div id="intro">
 		<h1><span class="wave">👋</span> Hello, I'm Mark.</h1>
 
-		<span>I'm 24. I write code. Mainly <b class="javascript">JavaScript</b>.</span>
+		<span>I'm 25. I write code. Mainly <b class="javascript">JavaScript</b>.</span>
 		<span>I'm many things, one of them is being a <b class="fullstack">Full Stack Developer</b>.</span>
 		<span>I'm also a <b class="subl">Sublime Text</b> nerd and I tend to be interested in too many <b class="technologies">technologies</b>.</span>
 		<br />
