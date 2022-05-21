@@ -1,25 +1,48 @@
 <script>
 	import Project from './Project.svelte';
 	import fetch from 'node-fetch';
+	import * as animateScroll from 'svelte-scrollto';
 
 	const REPO_URL = 'https://api.github.com/users/molnarmark/repos?per_page=100';
 
 	let data;
-	(async () => {
+	let totalLoaded = 6;
+	let collapseActive = false;
+
+	async function loadRepos() {
 		const response = await fetch(REPO_URL);
 		const body = await response.json();
-
 		data = body
 			.filter(repo => !repo.fork)
 			.sort((a, b) => (a.stargazers_count < b.stargazers_count ? 1 : -1))
-			.splice(0, 6)
+			.splice(0, totalLoaded)
 			.map(repo => ({
 				name: repo.name,
 				description: repo.description,
 				url: repo.html_url,
 				stars: repo.stargazers_count,
 			}));
-	})();
+
+			if (totalLoaded > 6) {
+				setTimeout(() => collapseActive = true, 500);
+			} else {
+				collapseActive = false;
+			}
+	}
+
+	async function loadMore() {
+		totalLoaded += 3;
+		await loadRepos();
+		animateScroll.scrollToBottom();
+	}
+
+	async function collapse() {
+		totalLoaded = 6;
+		await loadRepos();
+		animateScroll.scrollToTop();
+	}
+
+	loadRepos();
 </script>
 
 <main>
@@ -42,6 +65,13 @@
 			{#each data as repo}
 				<Project {...repo} />
 			{/each}
+		{/if}
+	</div>
+
+	<div style="z-index: 999">
+		<button on:click={() => loadMore()}>Load more</button>
+		{#if collapseActive}
+			<button on:click={() => collapse()}>Collapse</button>
 		{/if}
 	</div>
 
@@ -92,7 +122,8 @@
 		text-align: center;
 		font-weight: bold;
 		padding-top: 40px;
-		background: black;
+		background: rgb(255,0,0);
+		background: linear-gradient(180deg, rgba(255,0,0,0) 0%, rgba(12,87,189,0.3) 67%);
 		z-index: 2;
 	}
 
@@ -104,5 +135,31 @@
 		width: 80%;
 		background: black;
 		z-index: 2;
+	}
+
+	button {
+		background: none;
+		color:  white;
+		font-family: 'Dekko', sans-serif;
+		font-weight: bold;
+		font-size: 22px;
+		background: #2072e008;
+		border: solid 2px #2072e0;
+		border-radius: 5px;
+		-webkit-box-shadow: 0px 5px 0px 0px #2072e050;
+		-moz-box-shadow: 0px 5px 0px 0px #2072e050;
+		box-shadow: 0px 5px 0px 0px #2072e050;
+		padding: 0 10px;
+		z-index: 999;
+		animation: fadeIn 2s;
+		-webkit-animation: fadeIn 2s;
+		-moz-animation: fadeIn 2s;
+		-o-animation: fadeIn 2s;
+		-ms-animation: fadeIn 2s;
+	}
+
+	button:hover {
+		background: #2072e050;
+		cursor: pointer;
 	}
 </style>
