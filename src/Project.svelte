@@ -34,12 +34,9 @@
 	}
 
 	.project:hover {
-		border: solid 2px #164482;
-		-webkit-box-shadow: 0px 5px 0px 0px #16448250;
-		-moz-box-shadow: 0px 5px 0px 0px #16448250;
-		box-shadow: 0px 5px 0px 0px #16448250;
 		cursor: pointer;
-		background: #04214750;
+		background: linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, rgba(12, 87, 189, 0.2) 67%);
+
 	}
 
 	.project-title {

@@ -34,6 +34,7 @@ main {
 	background-position: top center;
 	background-repeat: no-repeat;
 	z-index: 1;
+	background-color: rgba(12, 87, 189, 0.15);
 }
 
 /* Credit goes to https://jarv.is/notes/css-waving-hand-emoji/ */

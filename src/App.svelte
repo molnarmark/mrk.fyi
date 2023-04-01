@@ -50,7 +50,7 @@
 	<div id="intro">
 		<h1><span class="wave">👋</span> Hello, I'm Mark.</h1>
 
-		<span>I'm 25. I write code. Mainly <b class="javascript">JavaScript</b>.</span>
+		<span>I'm 26. I write code. Mainly <b class="javascript">JavaScript</b>.</span>
 		<span>I'm many things, one of them is being a <b class="fullstack">Full Stack Developer</b>.</span>
 		<span>I'm also a <b class="subl">Sublime Text</b> nerd and I tend to be interested in too many <b class="technologies">technologies</b>.</span>
 		<br />
@@ -81,6 +81,10 @@
 </main>
 
 <style>
+	main {
+		width: 100%;
+	}
+
 	#intro {
 		display: flex;
 		justify-content: center;
@@ -124,7 +128,7 @@
 		padding-top: 40px;
 		background: rgb(255,0,0);
 		background: linear-gradient(180deg, rgba(255,0,0,0) 0%, rgba(12,87,189,0.3) 67%);
-		z-index: 2;
+		z-index: 5;
 	}
 
 	#projects {
@@ -133,8 +137,9 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		width: 80%;
-		background: black;
+		/*background: black;*/
 		z-index: 2;
+		min-height: 40vh;
 	}
 
 	button {
@@ -156,6 +161,7 @@
 		-moz-animation: fadeIn 2s;
 		-o-animation: fadeIn 2s;
 		-ms-animation: fadeIn 2s;
+		margin-bottom: 20px;
 	}
 
 	button:hover {
