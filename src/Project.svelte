@@ -14,7 +14,7 @@
 <style>
 	.project {
 		display: flex;
-		flex: 1 0 30%;
+/*		flex: 1 0 30%;*/
 		align-items: center;
 		flex-direction: column;
 		margin: 15px;
@@ -43,6 +43,7 @@
 		margin: 0;
 		margin-top: 10px;
 		font-size: 28px;
+		text-align: center;
 	}
 
 	.project-title a {

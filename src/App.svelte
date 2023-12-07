@@ -136,12 +136,10 @@
 	}
 
 	#projects {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-row-end: 3;
 		width: 80%;
-		/*background: black;*/
 		z-index: 2;
 		min-height: 40vh;
 	}
@@ -171,5 +169,28 @@
 	button:hover {
 		background: #2072e050;
 		cursor: pointer;
+	}
+
+	@media (max-width: 900px) {
+		#intro {
+			text-align: center;
+			padding: 10px;
+		}
+
+		.wave {
+			display: block;
+		}
+
+		#projects {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (max-width: 600px) {
+		#projects {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 </style>
