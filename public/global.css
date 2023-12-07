@@ -1,76 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
 
 body {
-	background: black;
-	width: 100vw;
-	height: 100%;
-	min-height: 100vh;
-	padding: 0;
-	margin: 0;
-	font-family: 'Dekko', sans-serif;
-	display: flex;
-	justify-content: center;
-	font-size: 28px;
-	color: white;
-	position: relative;
-	z-index: 0;
-	overflow-x: hidden;
+  background: black;
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Dekko', sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+  position: relative;
+  z-index: 0;
+  overflow-x: hidden;
 }
 
 main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .body-waves {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: url('wave.svg');
-	background-size: contain;
-	background-position: top center;
-	background-repeat: no-repeat;
-	z-index: 1;
-	background-color: rgba(12, 87, 189, 0.15);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('wave.svg');
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-color: rgba(12, 87, 189, 0.15);
 }
 
 /* Credit goes to https://jarv.is/notes/css-waving-hand-emoji/ */
 .wave {
-	animation-name: wave-animation;
-	animation-duration: 2.5s;
-	animation-iteration-count: infinite;
-	transform-origin: 70% 70%;
-	display: inline-block;
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
 }
 
 @keyframes wave-animation {
-	0% {
-		transform: rotate(0deg);
-	}
-	10% {
-		transform: rotate(14deg);
-	}
-	20% {
-		transform: rotate(-8deg);
-	}
-	30% {
-		transform: rotate(14deg);
-	}
-	40% {
-		transform: rotate(-4deg);
-	}
-	50% {
-		transform: rotate(10deg);
-	}
-	60% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(0deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @keyframes fadeIn {
