@@ -16,7 +16,7 @@
 		"svelte": "^3.49.0"
 	},
 	"dependencies": {
-		"node-fetch": "^2.6.1",
+		"node-fetch": "^2.6.7",
 		"sirv-cli": "^1.0.0",
 		"svelte-scrollto": "^0.2.0"
 	}
